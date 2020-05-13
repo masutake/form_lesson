@@ -42,12 +42,6 @@
   width: 50%;
 }
 
-.is-facebook {
-  color: #fff;
-  background-color: #3b5999;
-  border-color: #3b5999;
-}
-
 .button {
   box-sizing: border-box;
   display: inline-block;
@@ -59,6 +53,12 @@
   cursor: pointer;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
+}
+
+.is-facebook {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
 }
 
 .button-init {
@@ -137,6 +137,17 @@
   color: #dd4b39;
 }
 
+.input-init {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
 .input-area {
   box-sizing: border-box;
   height: 36px;
@@ -144,13 +155,15 @@
   padding: 5px;
   color: #545658;
   font-size: 13px;
-  line-height: 2px;
+  line-height: 2;
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
 }
 
-.input-init
+.background:focus {
+  box-shadow: 0 0 4px 0 #01bfbd;
+}
 
 .gender-contents {
   display: flex;
@@ -190,8 +203,33 @@
   display: none;
 }
 
+.gender-input:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
 .select-area {
   position: relative;
+}
+
+.select-area::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
 }
 
 .course-option {
@@ -216,12 +254,25 @@
   border: 1px solid #d9d9d9;
 }
 
+.course-option input:checked + .course-option-text::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
+
 .course-option input {
   display: none;
 }
 
 .remark {
-  height: 100%;
+  height: 100px;
 }
 
 
