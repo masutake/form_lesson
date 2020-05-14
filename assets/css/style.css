@@ -171,7 +171,9 @@
 }
 
 .background:focus {
-  box-shadow: 0 0 4px 0 #01bfbd;
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
 }
 
 .gender-contents {
@@ -327,4 +329,10 @@
 
 .link-color:hover {
   color: #01bfbd;
+}
+
+.foot-pert-focus:hover {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  border-color: #01bfbd;
 }
