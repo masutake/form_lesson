@@ -278,8 +278,12 @@
 
 .submit-btn {
   padding: 13px;
-  background-color: #01a6a4;
+  background-color: #01bfdb;
   color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #01a6a4;
 }
 
 .submit-btn:active {
