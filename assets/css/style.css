@@ -232,11 +232,6 @@
   border-bottom: 2px solid #d9d9d9;
 }
 
-.select-area:hover {
-  background-color: #3b5999;
-  color: #fff;
-}
-
 .course-option {
   margin-bottom: 10px;
   color: #545658;
